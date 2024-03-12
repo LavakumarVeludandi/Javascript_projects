@@ -1,0 +1,120 @@
+body {
+    background-color: #dadada; 
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    min-width: 540px;
+    min-height: 360px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px 10px 10px 10px;
+    color: #555;
+    height: 50px; /* Adjust height to blend into UI */
+    width: 80%; /* Adjust width to blend into UI */
+    margin: 0 auto; /* Center horizontally */
+    padding-top: 20px; /* Add top padding */
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#choice-form {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin: 10px 20px 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#password-el {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#password-el {
+    animation: fadeIn 1s ease;
+}
+
+button {
+    animation: slideIn 1s ease;
+}
+
+#copy-btn{
+    background-color: green;
+}
+
+.hidden{
+    display: none;
+}
+
+#copy-notification{
+    font-size: 1rem;
+    margin: 10px 10px 10px 10px;
+    color: darkolivegreen;
+    height: 50px;
+    width: 80%; 
+    margin: 0 auto; 
+    padding-top: 20px; 
+}
+
+#error-notification{
+    font-size: 1rem;
+    margin: 10px 10px 10px 10px;
+    color: darkred;
+    height: 50px; 
+    width: 80%; 
+    margin: 0 auto; 
+    padding-top: 20px; 
+}

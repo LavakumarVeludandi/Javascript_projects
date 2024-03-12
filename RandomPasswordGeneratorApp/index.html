@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class = "container">
+            <h1>Random Password Generator:</h1>
+            <div>
+                <p id = "password-el">Password</p>
+            </div>
+            <div>
+                <form id = "choice-form">
+                    <input type="radio" id="type1" name="type" value="type1" checked>
+                    <label for="type1">Type 1 </label><br>
+                    <input type="radio" id="type2" name="type" value="type2">
+                    <label for="type2">Type 2 </label><br>
+                </form>
+            </div>
+            <div>
+                <button id = "generate-btn" onclick="generate()">Generate Password</button>
+                <button id = "copy-btn" onclick="copy_to_clipboard()">Copy</button>
+            </div>
+            <div id="error-notification" class="hidden">Error while copying the Password!</div>
+            <div id="copy-notification" class="hidden">Password copied to clipboard!</div>
+        </div>
+        <script src = "index.js"></script>
+    </body>
+</html>
